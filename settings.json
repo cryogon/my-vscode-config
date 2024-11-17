@@ -7,7 +7,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "files.trimTrailingWhitespace": true,
     "diffEditor.renderSideBySide": false,
-    "editor.snippetSuggestions": "top",
     "editor.detectIndentation": false,
     "window.nativeFullScreen": true,
     "files.insertFinalNewline": true,
@@ -17,14 +16,14 @@
     "editor.lineNumbers": "on",
     "editor.guides.indentation": false,
     // Silence the Noise
-	"breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": false,
     "scm.diffDecorations": "all",
     "editor.hover.delay": 500,
     "editor.hover.enabled": true,
     "editor.matchBrackets": "never",
     "workbench.tips.enabled": false,
     "editor.colorDecorators": false,
-    "git.decorations.enabled": false,
+    "git.decorations.enabled": true,
     "workbench.startupEditor": "none",
     "editor.lightbulb.enabled": "off",
     "editor.selectionHighlight": false,
@@ -40,7 +39,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.gotoLocation.multipleImplementations": "goto",
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
     // Typography
     "editor.fontFamily": "FiraCode Nerd Font, Geist Mono, JetBrains Mono, Fira Code",
     "editor.suggestFontSize": 14,
@@ -63,8 +61,8 @@
     },
 
     /**
-    * Code
-    **/
+     * Code
+     **/
     // Include "-" in word selection.
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "emmet.includeLanguages": {
@@ -80,13 +78,13 @@
     },
 
     /**
-    * PHP
-    **/
+     * PHP
+     **/
     "php.suggest.basic": false,
 
     /**
-    * Prettier
-    **/
+     * Prettier
+     **/
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
@@ -125,7 +123,8 @@
     },
 
     "editor.quickSuggestions": {
-        "strings": true
+        "strings": true,
+        "other": "on"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -170,23 +169,23 @@
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-              "scope": [
-                "comment",
-                "keyword",
-                "variable.language",
-                "entity.other.attribute-name.html",
-                "entity.other.attribute-name",
-                "keyword.control",
-                "storage.type",
-                "comment",
-                "comment.block",
-                "comment.line"
-              ],
-              "settings": {
-                "fontStyle": ""
-              }
+                "scope": [
+                    "comment",
+                    "keyword",
+                    "variable.language",
+                    "entity.other.attribute-name.html",
+                    "entity.other.attribute-name",
+                    "keyword.control",
+                    "storage.type",
+                    "comment",
+                    "comment.block",
+                    "comment.line"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
             }
-          ]
+        ]
     },
     "material-icon-theme.saturation": 0,
     "vscode_custom_css.imports": [
@@ -201,5 +200,6 @@
     "redhat.telemetry.enabled": false,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
-  }
+    },
+    "prettier.configPath": "/Users/cryo/my_vscode_settings/.prettierrc"
+}
